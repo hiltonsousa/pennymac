@@ -1,5 +1,3 @@
-import math
-
 # builds a histogram for a given string
 def get_histogram(s):
     return {c:sum([1 if b == c else 0 for b in s]) for c in s}  
