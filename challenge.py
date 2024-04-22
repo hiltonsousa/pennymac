@@ -23,6 +23,9 @@ def count_spells(searched:str, bowl:str):
             )
     return n_found
 
+def count_pennymac_spells(bowl:str):
+    return count_spells('PENNYMAC', bowl)
+
 if __name__ == "__main__":
     # searched = 'PENNYMAC'
     # bowl = 'hP.E.N.Y.M.A.C.N.iltoxhYiltonPENNMACPENMMNYMACCAYNNEPhiltonnotlihn'
@@ -40,6 +43,5 @@ if __name__ == "__main__":
     assert(count_spells('PENNYMAC', 'CoAoMoYoNoNoEoPoxoxoxoPoEoNoNoYoMoAoCo') == 2)
     assert(count_spells('PENNYMAC', 'CoAoMoYoNoNoEoPoxoxoxoPoEoNoNoYoMoAoCoPENNYMAC') == 3)
 
-    searched = sys.argv[1]
-    bowl = sys.argv[2]
-    print(count_spells(searched, bowl))
+    bowl = sys.argv[1]
+    print(count_pennymac_spells(bowl))
