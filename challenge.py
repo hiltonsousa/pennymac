@@ -12,7 +12,7 @@ print(histo_searched)
 print(histo_bowl)
 
 n_found = 0
-# the minimum: all chars from the searched term must be in the bowl
+# the minimum: all chars from the searched term must be in the bowl (case sensitive)
 if set(histo_searched.keys()).issubset(set(histo_bowl.keys())):
     # ok, all searched chars are in the bowl! we then evaluate the amount of times each one of them occurs,
     # compared to the amount of times each one occurs in the searched term. this way we'll have a list
